@@ -1,0 +1,23 @@
+dataname,mop_name, threshold, 0.025, 0.05, 0.075, 0.1, 0.2
+mnist, IR, 0.35,For For suspicious array is 16801: noise is 1509 and Correct is 12654, the adv is 2638, 471(276),878(571), 1248(830), 1583(1081)
+mnist, IR, 0.3, For suspicious array is 19225: noise is 2658 and Correct is 13616, the adv is 2951, 411(376), 788(740), 1138(1110), 1459(1468)
+mnist, IR, 0.25,For suspicious array is 20669: noise is 3635 and Correct is 13960, the adv is 3074, 367(433), 723(864), 1051(1277), 1364(1689)
+
+fashin,IR, 0.35,For suspicious array is 18840: noise is 2633 and Correct is 9752, the adv is 6455, 642(112), 1214(216), 1763(324), 2283(432)
+fashin,IR, 0.3, For suspicious array is 22797: noise is 4163 and Correct is 11108, the adv is 7526, 633(121), 1225(233), 1752(373), 2295(499)
+fashin,IR, 0.25,For suspicious array is 26514: noise is 5963 and Correct is 12172, the adv is 8379, 626(134), 1232(245), 1775(385), 2317(524)
+fashin,IR, 0.22,For suspicious array is 27833: noise is 6687 and Correct is 12471, the adv is 8675, 634(128), 1225(258), 1785(396), 2314(538)
+
+
+svhn,  IR, 0.3, For suspicious array is 88161: noise is 5327 and Correct is 73634, the adv is 9200, 1274(776), 2400(1434), 3479(2006),4459(2522)
+svhn,  IR, 0.25,For suspicious array is 95217: noise is 11314 and Correct is 74463, the adv is 9440, 983(1214), 1897(2344), 2808(3380), 3639(4354)
+
+
+ciar10, IR, 0.30, For suspicious array is 16705: noise is 4937 and Correct is 8864, the adv is 2904,  406(397), 764(803), 1061(1249), 1355(4000)
+ciar10, IR, 0.25, For suspicious array is 30309: noise is 6789 and Correct is 17601, the adv is 5919, 447(344), 868(696), 1285(1029), 1653(1382)
+ciar10, IR, 0.22, For suspicious array is 35179: noise is 7153 and Correct is 20974, the adv is 7052, 453(339), 887(664), 1331(980), 1719(1302)
+
+
+# 需要一个验证机 -10%
+
+
