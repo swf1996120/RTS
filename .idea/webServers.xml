@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="3dabe6bb-00a4-40c0-a02f-ea2ccb646816" name="萌芽">
+        <fileTransfer accessType="SFTP" host="10.236.101.54" port="22" sshConfigId="9d098522-059f-447a-a689-db82676a5d64" sshConfig="swf@10.236.101.54:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

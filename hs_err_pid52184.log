@@ -1,0 +1,198 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 65536 bytes for Failed to commit area from 0x00000259af960000 to 0x00000259af970000 of length 65536.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (./src/hotspot/os/windows/os_windows.cpp:3511), pid=52184, tid=7308
+#
+# JRE version:  (11.0.11+9) (build )
+# Java VM: OpenJDK 64-Bit Server VM (11.0.11+9-b1504.16, mixed mode, sharing, tiered, compressed oops, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: git4idea.http.GitAskPassApp Username for 'https://github.com': 
+
+Host: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz, 8 cores, 15G,  Windows 10 , 64 bit Build 19041 (10.0.19041.1889)
+Time: Fri Sep  9 09:20:09 2022 中国标准时间 elapsed time: 0.012534 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000002599c1ae800):  JavaThread "Unknown thread" [_thread_in_vm, id=7308, stack(0x00000085e2700000,0x00000085e2800000)]
+
+Stack: [0x00000085e2700000,0x00000085e2800000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x5f5d5a]
+V  [jvm.dll+0x7798b5]
+V  [jvm.dll+0x77aecd]
+V  [jvm.dll+0x77b583]
+V  [jvm.dll+0x244978]
+V  [jvm.dll+0x5f3174]
+V  [jvm.dll+0x5e7d55]
+V  [jvm.dll+0x30068b]
+V  [jvm.dll+0x3005fa]
+V  [jvm.dll+0x3004d2]
+V  [jvm.dll+0x3054d5]
+V  [jvm.dll+0x34e0eb]
+V  [jvm.dll+0x34e7a6]
+V  [jvm.dll+0x34e1a3]
+V  [jvm.dll+0x2db0c8]
+V  [jvm.dll+0x2dc267]
+V  [jvm.dll+0x758057]
+V  [jvm.dll+0x75984c]
+V  [jvm.dll+0x35b659]
+V  [jvm.dll+0x73b67e]
+V  [jvm.dll+0x3c39f3]
+V  [jvm.dll+0x3c5dd1]
+C  [jli.dll+0x5373]
+C  [ucrtbase.dll+0x21bb2]
+C  [KERNEL32.DLL+0x17034]
+C  [ntdll.dll+0x52651]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x000002599a050cf0, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+  0x000002599c1c8000 GCTaskThread "GC Thread#0" [stack: 0x00000085e2800000,0x00000085e2900000] [id=14040]
+  0x000002599c225800 ConcurrentGCThread "G1 Main Marker" [stack: 0x00000085e2900000,0x00000085e2a00000] [id=18976]
+  0x000002599c227000 ConcurrentGCThread "G1 Conc#0" [stack: 0x00000085e2a00000,0x00000085e2b00000] [id=40240]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffe4a0cb8f7]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x000002599c1aafd0] Heap_lock - owner thread: 0x000002599c1ae800
+
+Heap address: 0x0000000703600000, size: 4042 MB, Compressed Oops mode: Non-zero based: 0x0000000703600000
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (1 events):
+Event: 0.005 Loaded shared library D:\程序\PyCharm 2021.2.1\jbr\bin\zip.dll
+
+
+Dynamic libraries:
+0x00007ff67b9a0000 - 0x00007ff67b9aa000 	D:\程序\PyCharm 2021.2.1\jbr\bin\java.exe
+0x00007ffebab70000 - 0x00007ffebad68000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffeba5a0000 - 0x00007ffeba65d000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffeb8500000 - 0x00007ffeb87ce000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffeb8400000 - 0x00007ffeb8500000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffe9cd20000 - 0x00007ffe9cd39000 	D:\程序\PyCharm 2021.2.1\jbr\bin\jli.dll
+0x00007ffe9b1f0000 - 0x00007ffe9b207000 	D:\程序\PyCharm 2021.2.1\jbr\bin\VCRUNTIME140.dll
+0x00007ffeb9c50000 - 0x00007ffeb9df0000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffeb8b30000 - 0x00007ffeb8b52000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffeb9e50000 - 0x00007ffeb9e7a000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffe9dfb0000 - 0x00007ffe9e24a000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\COMCTL32.dll
+0x00007ffeb87d0000 - 0x00007ffeb88db000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffeba500000 - 0x00007ffeba59e000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffeb88e0000 - 0x00007ffeb897d000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffeba420000 - 0x00007ffeba450000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffe64030000 - 0x00007ffe640cd000 	D:\程序\PyCharm 2021.2.1\jbr\bin\msvcp140.dll
+0x00007ffe49de0000 - 0x00007ffe4a92a000 	D:\程序\PyCharm 2021.2.1\jbr\bin\server\jvm.dll
+0x00007ffeba450000 - 0x00007ffeba4fe000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffeb8f20000 - 0x00007ffeb8fbc000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffeb9220000 - 0x00007ffeb9345000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffeb8bd0000 - 0x00007ffeb8bd8000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffe86fd0000 - 0x00007ffe86fd9000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffe9fd20000 - 0x00007ffe9fd47000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffeac1b0000 - 0x00007ffeac1ba000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffeb9080000 - 0x00007ffeb90eb000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffeb6b20000 - 0x00007ffeb6b32000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ffeb4f90000 - 0x00007ffeb4fa1000 	D:\程序\PyCharm 2021.2.1\jbr\bin\verify.dll
+0x00007ffeb6910000 - 0x00007ffeb6af4000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ffe9e400000 - 0x00007ffe9e42c000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ffeb82c0000 - 0x00007ffeb8342000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffe82010000 - 0x00007ffe82039000 	D:\程序\PyCharm 2021.2.1\jbr\bin\java.dll
+0x00007ffeb4f80000 - 0x00007ffeb4f8b000 	D:\程序\PyCharm 2021.2.1\jbr\bin\jimage.dll
+0x00007ffea58d0000 - 0x00007ffea58e8000 	D:\程序\PyCharm 2021.2.1\jbr\bin\zip.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;D:\程序\PyCharm 2021.2.1\jbr\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e;D:\程序\PyCharm 2021.2.1\jbr\bin\se;D:\程序\PyCharm 2021.2.1\jbr\bin\;D:\程序\PyCharm 2021.2.1\jbr\bi;D:\程序\PyCharm 2021.2.1\jbr\
+
+VM Arguments:
+java_command: git4idea.http.GitAskPassApp Username for 'https://github.com': 
+java_class_path (initial): D:/程序/PyCharm 2021.2.1/plugins/git4idea/lib/git4idea-rt.jar;D:/程序/PyCharm 2021.2.1/lib/3rd-party.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 4                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 2                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 8                                         {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 266338304                                 {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 4238344192                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5836300                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122910970                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122910970                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+     bool UseCompressedClassPointers               = true                                 {lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                                 {lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk8
+CLASSPATH=.;C:\Program Files\Java\jdk8\lib\dt.jar;C:\Program Files\Java\jdk8\lib\tools.jar;.;C:\Program Files (x86)\scala\bin;C:\Program Files (x86)\scala\lib\dt.jar;C:\Program Files (x86)\scala\lib\tools.jar.;
+PATH=D:/程序/Git/mingw64/libexec/git-core;D:/程序/Git/mingw64/libexec/git-core;D:\程序\Git\mingw64\bin;D:\程序\Git\usr\bin;C:\Users\ZLL\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\libnvvp;D:\Miniconda3;D:\Miniconda3\Library\mingw-w64\bin;D:\Miniconda3\Library\usr\bin;D:\Miniconda3\Library\bin;D:\Miniconda3\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk8\bin;C:\Program Files\Java\jdk8\jre\bin;D:\程序\Git\cmd;D:\程序\apache-maven-3.6.3\bin;E:\tool\;D:\程序\Node.js\;D:\程序\CTEX\UserData\miktex\bin;D:\程序\CTEX\MiKTeX\miktex\bin;D:\程序\CTEX\CTeX\ctex\bin;D:\程序\CTEX\CTeX\cct\bin;D:\程序\CTEX\CTeX\ty\bin;D:\程序\CTEX\Ghostscript\gs9.05\bin;D:\程序\CTEX\GSview\gsview;D:\程序\CTEX\WinEdt;D:\程序\Graphviz\bin;D:\程序\Microsoft VS Code\bin;C:\Program Files\srcML;C:\Program Files (x86)\scala\bin;C:\Program Files (x86)\scala\jre\bin;C:\Program Files\NVIDIA Corporation\Nsight Compute 2020.2.1\;D:\程序\;D:\程序\Python\Scripts\;D:\程序\Python\;C:\Users\ZLL\AppData\Local\Microsoft\WindowsApps;D:\程序\Bandizip\;C:\Users\ZLL\AppData\Roaming\npm
+USERNAME=ZLL
+DISPLAY=:0.0
+LC_ALL=en_US.UTF-8
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10 , 64 bit Build 19041 (10.0.19041.1889)
+OS uptime: 6 days 23:26 hours
+
+CPU:total 8 (initial active 8) (4 cores per cpu, 2 threads per core) family 6 model 140 stepping 1 microcode 0x8a, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx, evex, sha, fma
+
+Memory: 4k page, system-wide physical 16167M (577M free)
+TotalPageFile size 45055M (AvailPageFile size 3M)
+current process WorkingSet (physical memory assigned to process): 18M, peak: 18M
+current process commit charge ("private bytes"): 324M, peak: 324M
+
+vm_info: OpenJDK 64-Bit Server VM (11.0.11+9-b1504.16) for windows-amd64 JRE (11.0.11+9-b1504.16), built on Aug  9 2021 01:34:19 by "" with MS VC++ 14.0 (VS2015)
+
+END.
